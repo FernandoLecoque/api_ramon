@@ -1,0 +1,124 @@
+.weather-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .search-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .search-form input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .search-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .search-form button:disabled {
+    background-color: #cccccc;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    margin-bottom: 20px;
+  }
+  
+  .weather-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .weather-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .temperature {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .temperature img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .condition {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .weather-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+  }
+  
+  .forecast {
+    margin-top: 20px;
+  }
+  
+  .forecast-days {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .forecast-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    width: calc(100% / 5 - 10px);
+  }
+  
+  .forecast-day img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 600px) {
+    .weather-details {
+      grid-template-columns: 1fr;
+    }
+    
+    .forecast-day {
+      width: calc(100% / 3 - 10px);
+    }
+  }

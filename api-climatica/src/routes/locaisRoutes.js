@@ -9,4 +9,4 @@ router.get('/:id', localController.obterLocal);
 router.put('/:id', localController.atualizarLocal);
 router.delete('/:id', localController.deletarLocal);
 
-module.exports = router;
+module.exports = router; // ✅ Exportando apenas o router (correto)
