@@ -20,6 +20,6 @@ app.use(express.json());
 
 // Uso das rotas
 app.use('/api/locais', locaisRoutes);
-app.use('/api/temperatura', climasRoutes);
+app.use('/api/clima', climasRoutes);
 
 module.exports = app;
